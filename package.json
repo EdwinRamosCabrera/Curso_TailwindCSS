@@ -1,18 +1,6 @@
 {
-  "name": "curso_tailwindcss",
-  "version": "1.0.0",
-  "description": "Curso de TailwindCSS en Platzi",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^4.1.4"
-  },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.4"
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
   }
 }
