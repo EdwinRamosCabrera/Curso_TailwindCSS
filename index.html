@@ -8,10 +8,10 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 <body>
-    <header class="">
-        <nav class="container mx-auto flex items-center justify-between py-4">
+    <header class="container mx-auto">
+        <nav class="flex items-center justify-between py-2">
             <a href="#" class="text-lg font-bold">
-              <img class="w-25" src="https://www.cieneguillatours.com/_next/image?url=%2Fimages%2Flogo-black.webp&w=1920&q=75" alt="Cieneguilla Tours">
+              <img class="w-20" src="https://www.cieneguillatours.com/_next/image?url=%2Fimages%2Flogo-black.webp&w=1920&q=75" alt="Cieneguilla Tours">
             </a>
             <ul class="flex space-x-10 font-semibold text-lg">
                 <li class="hover:text-blue-600">
@@ -29,31 +29,58 @@
             </ul>
         </nav>
     </header>
-    <main class="m-auto flex flex-wrap flex-row justify-center items-center">
-        <section class="mx-auto w-full">
-            <div class="m-auto flex flex-col gap-2.5 justify-center items-center">
-                <img src="https://storage.googleapis.com/svr-cieneguilla.appspot.com/uploads/web/banner/desktop/1741191977348.jpg" alt="Selva central">
-                <button class="bg-white text-green-500 hover:bg-green-600 hover:text-white py-2 px-2 rounded border-2 border-green-500">Solicitar Tour</button>
+    <main class="container mx-auto flex flex-wrap flex-row justify-center items-center">
+        <section class="w-full my-4">
+            <div class="relative inline-block w-full justify-center items-center">
+              <img src="img/Paracas.jpg" alt="Paracas" class="w-full object-cover rounded-lg shadow-md">
+              <button class="absolute top-4/5 left-3/4 text-lg font-semibold cursor-pointer bg-white text-green-500 hover:bg-green-600 hover:text-white py-2 px-2 rounded-2xl border-2 border-green-500">Solicitar Tour</button>
             </div>
         </section>
-        <section class="m-10 flex justify-center items-center">
-          <h2 class="text-2xl font-bold">OFERTAS DE PAQUETES TURÍSTICOS</h2>
-          <div class="grid grid-cols-3">
-            <div>
-              <img src="https://storage.googleapis.com/svr-cieneguilla.appspot.com/uploads/paquetes-turisticos/429336832/fotoPrincipal.jpg" alt="Paracas">
+        <section class="flex flex-col my-4">
+          <h2 class="text-2xl font-semibold mb-4">
+            <img class="inline" src="/img/icon-paquetes.avif" alt="Paquetes" >
+            OFERTAS DE PAQUETES TURÍSTICOS
+          </h2>
+          <div class="grid grid-cols-3 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-lg overflow-hidden shadow-lg hover:scale-102 transition duration-300">
+              <img src="/img/Oferta_San_Mateo.jpg" alt="San Mateo">
+              <div class="flex flex-row justify-center items-center my-4">
+                <p class="text-lg font-semibold mx-4">Full day San Mateo</p>
+                <p class="text-lg font-semibold mx-4">S/85.00</p>
+              </div>
+              <div class="flex flex-row justify-center items-center gap-6 my-4">
+                <button class="text-md cursor-pointer bg-white text-green-500 font-semibold hover:bg-green-600 hover:text-white py-2 px-6 rounded border-2 border-green-500">COTIZAR</button>
+                <button class="text-md cursor-pointer bg-green-600 text-white font-semibold hover:bg-green-400 hover:text-white py-2 px-6 rounded border-2 border-green-400">COMPRAR</button>
+              </div>
             </div>
-            <div>
-              <img src="https://storage.googleapis.com/svr-cieneguilla.appspot.com/uploads/paquetes-turisticos/433981661/fotoPrincipal.jpg" alt="Marcona">
+            <div class="rounded-lg overflow-hidden shadow-lg hover:scale-102 transition duration-300">
+              <img src="/img/Oferta_Marcona.jpg" alt="Marcona">
+              <div class="flex flex-row justify-center items-center my-4">
+                <p class="text-lg font-semibold mx-4">Full day playa Marcona</p>
+                <p class="text-lg font-semibold mx-4">S/189.00</p>
+              </div>
+              <div class="flex flex-row justify-center items-center gap-6 my-4">
+                <button class="text-md cursor-pointer bg-white text-green-500 font-semibold hover:bg-green-600 hover:text-white py-2 px-6 rounded border-2 border-green-500">COTIZAR</button>
+                <button class="text-md cursor-pointer bg-green-600 text-white font-semibold hover:bg-green-400 hover:text-white py-2 px-6 rounded border-2 border-green-400">COMPRAR</button>
+              </div>
             </div>
-            <div>
-              <img src="https://storage.googleapis.com/svr-cieneguilla.appspot.com/uploads/paquetes-turisticos/778739737/fotoPrincipal.jpg" alt="Playa la mina">
+            <div class="rounded-lg overflow-hidden shadow-lg hover:scale-102 transition duration-300">
+              <img src="/img/Oferta_Playa_Mina.jpg" alt="Playa la mina">
+              <div class="flex flex-row justify-center items-center my-4">
+                <p class="text-lg font-semibold mx-4">Full day Playa La Mina</p>
+                <p class="text-lg font-semibold mx-4">S/115.00</p>
+              </div>
+              <div class="flex flex-row justify-center items-center gap-6 my-4">
+                <button class="text-md cursor-pointer bg-white text-green-500 font-semibold hover:bg-green-600 hover:text-white py-2 px-6 rounded border-2 border-green-500">COTIZAR</button>
+                <button class="text-md cursor-pointer bg-green-600 text-white font-semibold hover:bg-green-400 hover:text-white py-2 px-6 rounded border-2 border-green-400">COMPRAR</button>
+              </div>
             </div>
           </div>
         </section>
     </main>
     <footer class="bg-blue-500 text-white dark:bg-blue900 dark:text-gray-200">
         <div class="container mx-auto py-4">
-            <p class="text-gray-200 dark:text-gray-400">Copyright © 2023. All rights reserved.</p>
+            <p class="text-gray-200 dark:text-gray-400">Copyright 2023. All rights reserved.</p>
         </div>
     </footer>
 
@@ -90,7 +117,7 @@
               <h1
                 class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
               >
-                Welcome to Squid 🦑
+                Welcome to Squid 
               </h1>
       
               <p class="mt-4 leading-relaxed text-gray-500">
